@@ -1,0 +1,384 @@
+{
+  "quick_mode": false,
+  "baseline_perplexity": 29.940524763616033,
+  "fisher_seconds": 38.17910027503967,
+  "num_fisher_samples": 128,
+  "rows": [
+    {
+      "method": "magnitude",
+      "granularity": "unstructured",
+      "pattern": "unstructured",
+      "target_sparsity": 0.1,
+      "actual_sparsity": 0.09999988697193286,
+      "perplexity": 30.303583914406026
+    },
+    {
+      "method": "obd",
+      "granularity": "unstructured",
+      "pattern": "unstructured",
+      "target_sparsity": 0.1,
+      "actual_sparsity": 0.09999988697193286,
+      "perplexity": 30.088869564950016
+    },
+    {
+      "method": "magnitude",
+      "granularity": "unstructured",
+      "pattern": "unstructured",
+      "target_sparsity": 0.2,
+      "actual_sparsity": 0.20000005651403358,
+      "perplexity": 32.140056507192185
+    },
+    {
+      "method": "obd",
+      "granularity": "unstructured",
+      "pattern": "unstructured",
+      "target_sparsity": 0.2,
+      "actual_sparsity": 0.20000005651403358,
+      "perplexity": 30.469339123174397
+    },
+    {
+      "method": "magnitude",
+      "granularity": "unstructured",
+      "pattern": "unstructured",
+      "target_sparsity": 0.3,
+      "actual_sparsity": 0.2999999434859664,
+      "perplexity": 40.520093258805176
+    },
+    {
+      "method": "obd",
+      "granularity": "unstructured",
+      "pattern": "unstructured",
+      "target_sparsity": 0.3,
+      "actual_sparsity": 0.2999999434859664,
+      "perplexity": 31.970816399854634
+    },
+    {
+      "method": "magnitude",
+      "granularity": "unstructured",
+      "pattern": "unstructured",
+      "target_sparsity": 0.4,
+      "actual_sparsity": 0.40000011302806715,
+      "perplexity": 87.94118689575122
+    },
+    {
+      "method": "obd",
+      "granularity": "unstructured",
+      "pattern": "unstructured",
+      "target_sparsity": 0.4,
+      "actual_sparsity": 0.40000011302806715,
+      "perplexity": 37.77153937201471
+    },
+    {
+      "method": "magnitude",
+      "granularity": "unstructured",
+      "pattern": "unstructured",
+      "target_sparsity": 0.5,
+      "actual_sparsity": 0.5,
+      "perplexity": 343.7703191896157
+    },
+    {
+      "method": "obd",
+      "granularity": "unstructured",
+      "pattern": "unstructured",
+      "target_sparsity": 0.5,
+      "actual_sparsity": 0.5,
+      "perplexity": 109.4117451462024
+    },
+    {
+      "method": "magnitude",
+      "granularity": "unstructured",
+      "pattern": "unstructured",
+      "target_sparsity": 0.6,
+      "actual_sparsity": 0.5999998869719328,
+      "perplexity": 1248.6858277179538
+    },
+    {
+      "method": "obd",
+      "granularity": "unstructured",
+      "pattern": "unstructured",
+      "target_sparsity": 0.6,
+      "actual_sparsity": 0.5999998869719328,
+      "perplexity": 595.9749383614486
+    },
+    {
+      "method": "magnitude",
+      "granularity": "unstructured",
+      "pattern": "unstructured",
+      "target_sparsity": 0.7,
+      "actual_sparsity": 0.7000000565140335,
+      "perplexity": 4296.2737961665
+    },
+    {
+      "method": "obd",
+      "granularity": "unstructured",
+      "pattern": "unstructured",
+      "target_sparsity": 0.7,
+      "actual_sparsity": 0.7000000565140335,
+      "perplexity": 3028.112143452724
+    },
+    {
+      "method": "magnitude",
+      "granularity": "nm",
+      "pattern": "7:8",
+      "target_sparsity": 0.125,
+      "actual_sparsity": 0.125,
+      "perplexity": 31.430474826747435
+    },
+    {
+      "method": "obd",
+      "granularity": "nm",
+      "pattern": "7:8",
+      "target_sparsity": 0.125,
+      "actual_sparsity": 0.125,
+      "perplexity": 30.592474521518866
+    },
+    {
+      "method": "magnitude",
+      "granularity": "nm",
+      "pattern": "6:8",
+      "target_sparsity": 0.25,
+      "actual_sparsity": 0.25,
+      "perplexity": 37.710470106366806
+    },
+    {
+      "method": "obd",
+      "granularity": "nm",
+      "pattern": "6:8",
+      "target_sparsity": 0.25,
+      "actual_sparsity": 0.25,
+      "perplexity": 32.404912151180696
+    },
+    {
+      "method": "magnitude",
+      "granularity": "nm",
+      "pattern": "5:8",
+      "target_sparsity": 0.375,
+      "actual_sparsity": 0.375,
+      "perplexity": 66.90571195170935
+    },
+    {
+      "method": "obd",
+      "granularity": "nm",
+      "pattern": "5:8",
+      "target_sparsity": 0.375,
+      "actual_sparsity": 0.375,
+      "perplexity": 39.33221751904549
+    },
+    {
+      "method": "magnitude",
+      "granularity": "nm",
+      "pattern": "4:8",
+      "target_sparsity": 0.5,
+      "actual_sparsity": 0.5,
+      "perplexity": 345.1611737394522
+    },
+    {
+      "method": "obd",
+      "granularity": "nm",
+      "pattern": "4:8",
+      "target_sparsity": 0.5,
+      "actual_sparsity": 0.5,
+      "perplexity": 75.08084968930726
+    },
+    {
+      "method": "magnitude",
+      "granularity": "nm",
+      "pattern": "3:8",
+      "target_sparsity": 0.625,
+      "actual_sparsity": 0.625,
+      "perplexity": 1785.938182485198
+    },
+    {
+      "method": "obd",
+      "granularity": "nm",
+      "pattern": "3:8",
+      "target_sparsity": 0.625,
+      "actual_sparsity": 0.625,
+      "perplexity": 643.1612854105476
+    },
+    {
+      "method": "magnitude",
+      "granularity": "nm",
+      "pattern": "2:4",
+      "target_sparsity": 0.5,
+      "actual_sparsity": 0.5,
+      "perplexity": 719.7767200898751
+    },
+    {
+      "method": "obd",
+      "granularity": "nm",
+      "pattern": "2:4",
+      "target_sparsity": 0.5,
+      "actual_sparsity": 0.5,
+      "perplexity": 132.63409094416025
+    },
+    {
+      "method": "magnitude",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.1,
+      "actual_sparsity": 0.09440104166666667,
+      "perplexity": 407.4690281016501
+    },
+    {
+      "method": "obd",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.1,
+      "actual_sparsity": 0.09440104166666667,
+      "perplexity": 40.78463494932154
+    },
+    {
+      "method": "obd_naive",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.1,
+      "actual_sparsity": 0.09440104166666667,
+      "perplexity": 86.83665095736676
+    },
+    {
+      "method": "magnitude",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.2,
+      "actual_sparsity": 0.18880208333333334,
+      "perplexity": 308.6950178621421
+    },
+    {
+      "method": "obd",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.2,
+      "actual_sparsity": 0.18880208333333334,
+      "perplexity": 975.0547419661741
+    },
+    {
+      "method": "obd_naive",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.2,
+      "actual_sparsity": 0.18880208333333334,
+      "perplexity": 1590.9302358534937
+    },
+    {
+      "method": "magnitude",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.3,
+      "actual_sparsity": 0.3111979166666667,
+      "perplexity": 744.2356047205622
+    },
+    {
+      "method": "obd",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.3,
+      "actual_sparsity": 0.3111979166666667,
+      "perplexity": 9706.195180832347
+    },
+    {
+      "method": "obd_naive",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.3,
+      "actual_sparsity": 0.3111979166666667,
+      "perplexity": 45460.779581488496
+    },
+    {
+      "method": "magnitude",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.4,
+      "actual_sparsity": 0.4055989583333333,
+      "perplexity": 2071.5754172672714
+    },
+    {
+      "method": "obd",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.4,
+      "actual_sparsity": 0.4055989583333333,
+      "perplexity": 67596.34728465289
+    },
+    {
+      "method": "obd_naive",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.4,
+      "actual_sparsity": 0.4055989583333333,
+      "perplexity": 14489.878833040804
+    },
+    {
+      "method": "magnitude",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.5,
+      "actual_sparsity": 0.5,
+      "perplexity": 2763.3516071014287
+    },
+    {
+      "method": "obd",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.5,
+      "actual_sparsity": 0.5,
+      "perplexity": 71635.1620731753
+    },
+    {
+      "method": "obd_naive",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.5,
+      "actual_sparsity": 0.5,
+      "perplexity": 41653.29342905047
+    },
+    {
+      "method": "magnitude",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.6,
+      "actual_sparsity": 0.5944010416666666,
+      "perplexity": 3063.2529885408057
+    },
+    {
+      "method": "obd",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.6,
+      "actual_sparsity": 0.5944010416666666,
+      "perplexity": 3540398.9846876296
+    },
+    {
+      "method": "obd_naive",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.6,
+      "actual_sparsity": 0.5944010416666666,
+      "perplexity": 1035415.3364481818
+    },
+    {
+      "method": "magnitude",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.7,
+      "actual_sparsity": 0.6888020833333334,
+      "perplexity": 4682.981134872213
+    },
+    {
+      "method": "obd",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.7,
+      "actual_sparsity": 0.6888020833333334,
+      "perplexity": 232838.53674865668
+    },
+    {
+      "method": "obd_naive",
+      "granularity": "structured",
+      "pattern": "structured",
+      "target_sparsity": 0.7,
+      "actual_sparsity": 0.6888020833333334,
+      "perplexity": 1005242.0427499898
+    }
+  ]
+}

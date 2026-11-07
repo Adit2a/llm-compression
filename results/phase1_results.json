@@ -1,0 +1,72 @@
+{
+  "part_a_mlp": {
+    "linear_test_accuracy": 0.46111111111111114,
+    "mlp_test_accuracy": 0.9944444444444445,
+    "linear_final_loss": 0.7176527976989746,
+    "mlp_final_loss": 0.002382432110607624,
+    "linear_num_params": 9,
+    "mlp_num_params": 4547
+  },
+  "part_b_rnn_check": {
+    "manual_vs_pytorch_rnn_max_abs_diff": 8.344650268554688e-06
+  },
+  "part_c1_recall": {
+    "sequence_lengths": [
+      5,
+      20,
+      50,
+      100
+    ],
+    "rnn_accuracy": [
+      1.0,
+      0.09175000339746475,
+      0.11225000768899918,
+      0.09850000590085983
+    ],
+    "attention_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "part_c2_gradients": {
+    "rnn_grad_first_position": 5.441095835620037e-33,
+    "rnn_grad_last_position": 0.0007467048161185018,
+    "attention_grad_first_position": 1.3271603887806408e-05,
+    "attention_grad_second_last_position": 2.0961399746871697e-05
+  },
+  "part_c3_speed": {
+    "batch_size": 16,
+    "sequence_lengths": [
+      64,
+      256,
+      1024,
+      2048
+    ],
+    "dim_128_rnn_forward_ms": [
+      1.0373830795288086,
+      0.6371498107910156,
+      1.0808467864990234,
+      2.3483991622924805
+    ],
+    "dim_128_attention_forward_ms": [
+      1.3643503189086914,
+      1.0757923126220703,
+      8.19847583770752,
+      31.998872756958008
+    ],
+    "dim_768_rnn_forward_ms": [
+      6.530880928039551,
+      21.611666679382324,
+      84.10513401031494,
+      254.38532829284665
+    ],
+    "dim_768_attention_forward_ms": [
+      2.5411128997802734,
+      11.17560863494873,
+      72.165846824646,
+      212.17303276062012
+    ]
+  }
+}

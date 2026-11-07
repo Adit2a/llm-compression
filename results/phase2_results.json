@@ -1,0 +1,277 @@
+{
+  "step1_match_huggingface": {
+    "max_abs_logit_difference": 7.62939453125e-05,
+    "mean_abs_logit_difference": 1.4598130292142741e-05,
+    "top1_agreement": 1.0,
+    "identical_generation": true,
+    "generated_text": "The transformer architecture was introduced in 2017 and quickly replaced recurrent neural networks for most language tasks, because it is easy to implement.\n\nThe main goal of the project is to create a new type"
+  },
+  "step2_parameters": {
+    "total": 124439808,
+    "per_component": {
+      "token embedding (also lm_head, tied)": 38597376,
+      "position embedding": 786432,
+      "LayerNorms": 38400,
+      "attention (q, k, v, out)": 28348416,
+      "MLP (fc_in, fc_out)": 56669184
+    },
+    "per_block": {
+      "attention": 2362368,
+      "mlp": 4722432,
+      "layernorms": 3072
+    }
+  },
+  "step3_flops": [
+    {
+      "seq_len": 128,
+      "formula_flops": 32228179968,
+      "torch_profiler_flops": 32230637568,
+      "flop_counter_flops": 32228179968,
+      "breakdown": {
+        "linear layers in blocks": 21743271936,
+        "attention scores + weighted sum": 603979776,
+        "lm_head": 9880928256
+      },
+      "flops_per_token": 251782656.0
+    },
+    {
+      "seq_len": 256,
+      "formula_flops": 65664319488,
+      "torch_profiler_flops": 65669234688,
+      "flop_counter_flops": 65664319488,
+      "breakdown": {
+        "linear layers in blocks": 43486543872,
+        "attention scores + weighted sum": 2415919104,
+        "lm_head": 19761856512
+      },
+      "flops_per_token": 256501248.0
+    },
+    {
+      "seq_len": 512,
+      "formula_flops": 136160477184,
+      "torch_profiler_flops": 136170307584,
+      "flop_counter_flops": 136160477184,
+      "breakdown": {
+        "linear layers in blocks": 86973087744,
+        "attention scores + weighted sum": 9663676416,
+        "lm_head": 39523713024
+      },
+      "flops_per_token": 265938432.0
+    },
+    {
+      "seq_len": 1024,
+      "formula_flops": 291648307200,
+      "torch_profiler_flops": 291667968000,
+      "flop_counter_flops": 291648307200,
+      "breakdown": {
+        "linear layers in blocks": 173946175488,
+        "attention scores + weighted sum": 38654705664,
+        "lm_head": 79047426048
+      },
+      "flops_per_token": 284812800.0
+    }
+  ],
+  "step4_latency": [
+    {
+      "precision": "fp32",
+      "batch_size": 1,
+      "seq_len": 128,
+      "latency_ms": 26.323699951171875,
+      "peak_memory_mb": 520.50439453125,
+      "achieved_tflops": 1.2243028156292775
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 1,
+      "seq_len": 256,
+      "latency_ms": 43.782663345336914,
+      "peak_memory_mb": 546.341796875,
+      "achieved_tflops": 1.4997790100175257
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 1,
+      "seq_len": 512,
+      "latency_ms": 83.00304412841797,
+      "peak_memory_mb": 595.75390625,
+      "achieved_tflops": 1.640427512192681
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 1,
+      "seq_len": 1024,
+      "latency_ms": 207.76185989379883,
+      "peak_memory_mb": 694.919921875,
+      "achieved_tflops": 1.403762496875419
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 4,
+      "seq_len": 128,
+      "latency_ms": 70.30296325683594,
+      "peak_memory_mb": 595.7509765625,
+      "achieved_tflops": 1.833674057251991
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 4,
+      "seq_len": 256,
+      "latency_ms": 158.77671241760254,
+      "peak_memory_mb": 694.9140625,
+      "achieved_tflops": 1.6542556773765325
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 4,
+      "seq_len": 512,
+      "latency_ms": 422.60937690734863,
+      "peak_memory_mb": 894.740234375,
+      "achieved_tflops": 1.2887596406915631
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 4,
+      "seq_len": 1024,
+      "latency_ms": 1045.8064079284668,
+      "peak_memory_mb": 1293.626953125,
+      "achieved_tflops": 1.11549634803901
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 8,
+      "seq_len": 128,
+      "latency_ms": 151.66306495666504,
+      "peak_memory_mb": 694.9130859375,
+      "achieved_tflops": 1.6999883248941918
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 8,
+      "seq_len": 256,
+      "latency_ms": 389.53824043273926,
+      "peak_memory_mb": 894.73828125,
+      "achieved_tflops": 1.3485570898518882
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 8,
+      "seq_len": 512,
+      "latency_ms": 907.6543807983398,
+      "peak_memory_mb": 1293.623046875,
+      "achieved_tflops": 1.200108588154343
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 8,
+      "seq_len": 1024,
+      "latency_ms": 2163.0539417266846,
+      "peak_memory_mb": 2090.189453125,
+      "achieved_tflops": 1.0786538479653007
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 1,
+      "seq_len": 128,
+      "latency_ms": 94.71879005432129,
+      "peak_memory_mb": 286.16455078125,
+      "achieved_tflops": 0.3402511787736849
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 1,
+      "seq_len": 256,
+      "latency_ms": 170.00141143798828,
+      "peak_memory_mb": 298.5185546875,
+      "achieved_tflops": 0.3862574959382175
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 1,
+      "seq_len": 512,
+      "latency_ms": 372.7396488189697,
+      "peak_memory_mb": 323.43701171875,
+      "achieved_tflops": 0.36529646796477433
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 1,
+      "seq_len": 1024,
+      "latency_ms": 766.7116165161133,
+      "peak_memory_mb": 401.49072265625,
+      "achieved_tflops": 0.38038853320787097
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 4,
+      "seq_len": 128,
+      "latency_ms": 346.1782455444336,
+      "peak_memory_mb": 323.43408203125,
+      "achieved_tflops": 0.3723882754944907
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 4,
+      "seq_len": 256,
+      "latency_ms": 660.5605602264404,
+      "peak_memory_mb": 373.26806640625,
+      "achieved_tflops": 0.39762785392752026
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 4,
+      "seq_len": 512,
+      "latency_ms": 1389.0058040618896,
+      "peak_memory_mb": 473.31103515625,
+      "achieved_tflops": 0.3921091669619348
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 4,
+      "seq_len": 1024,
+      "latency_ms": 3063.3898735046387,
+      "peak_memory_mb": 784.01416015625,
+      "achieved_tflops": 0.3808177466700872
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 8,
+      "seq_len": 128,
+      "latency_ms": 643.2343482971191,
+      "peak_memory_mb": 373.26708984375,
+      "achieved_tflops": 0.4008266045284428
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 8,
+      "seq_len": 256,
+      "latency_ms": 1318.0058479309082,
+      "peak_memory_mb": 472.93408203125,
+      "achieved_tflops": 0.39856769735026076
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 8,
+      "seq_len": 512,
+      "latency_ms": 2775.6415367126465,
+      "peak_memory_mb": 672.26806640625,
+      "achieved_tflops": 0.3924439820720157
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 8,
+      "seq_len": 1024,
+      "latency_ms": 6137.515544891357,
+      "peak_memory_mb": 1294.04541015625,
+      "achieved_tflops": 0.380151616812125
+    }
+  ],
+  "step5_perplexity": {
+    "num_test_tokens": 287644,
+    "ppl_non_overlapping_1024": 29.944441909947194,
+    "ppl_sliding_stride_512": 25.1734708504656,
+    "ppl_first_40_windows": 31.327636237415636,
+    "seconds_non_overlapping": 62.930121183395386,
+    "seconds_sliding": 131.19855499267578,
+    "seconds_subset_40": 9.60325574874878
+  }
+}

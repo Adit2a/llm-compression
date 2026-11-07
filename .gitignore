@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+
+# tokenized WikiText-2 cache (re-created automatically)
+data/
+
+# smoke-test outputs and raw Kaggle downloads
+results/*_quick.json
+results/kaggle_t4/
+
+# personal notes
+PROGRESS.md

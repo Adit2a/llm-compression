@@ -1,0 +1,214 @@
+{
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "compute_capability": [
+    7,
+    5
+  ],
+  "torch_version": "2.14.1+cu126",
+  "cuda_version": "12.6",
+  "python": "3.12.3",
+  "matmuls": [
+    {
+      "layer": "attention q/k/v/out  768 -> 768",
+      "tokens": 512,
+      "K": 768,
+      "N": 768,
+      "fp32_ms": 0.2843852806091309,
+      "fp32_tops": 2.123808147546606,
+      "fp16_ms": 1.9581893920898437,
+      "fp16_tops": 0.30843787553941,
+      "int8_ms": 0.08504256248474121,
+      "int8_tops": 7.102088158601399,
+      "fp16_50pct_zeros_dense_ms": 1.433519287109375,
+      "fp16_50pct_zeros_dense_tops": 0.4213265781850045,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "cuSPARSELt not supported on your machine."
+    },
+    {
+      "layer": "attention q/k/v/out  768 -> 768",
+      "tokens": 2048,
+      "K": 768,
+      "N": 768,
+      "fp32_ms": 1.6587257385253906,
+      "fp32_tops": 1.4564909966054758,
+      "fp16_ms": 5.853085327148437,
+      "fp16_tops": 0.412759932405942,
+      "int8_ms": 0.20316160202026368,
+      "int8_tops": 11.891612784974162,
+      "fp16_50pct_zeros_dense_ms": 5.822955322265625,
+      "fp16_50pct_zeros_dense_tops": 0.4148956964794299,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "cuSPARSELt not supported on your machine."
+    },
+    {
+      "layer": "attention q/k/v/out  768 -> 768",
+      "tokens": 8192,
+      "K": 768,
+      "N": 768,
+      "fp32_ms": 7.378682250976563,
+      "fp32_tops": 1.3096751001469158,
+      "fp16_ms": 23.081005859375,
+      "fp16_tops": 0.41868523732794016,
+      "int8_ms": 0.8279814147949218,
+      "int8_tops": 11.671368756982961,
+      "fp16_50pct_zeros_dense_ms": 23.08030517578125,
+      "fp16_50pct_zeros_dense_tops": 0.4186979479864218,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "cuSPARSELt not supported on your machine."
+    },
+    {
+      "layer": "mlp fc_in            768 -> 3072",
+      "tokens": 512,
+      "K": 768,
+      "N": 3072,
+      "fp32_ms": 1.4431327819824218,
+      "fp32_tops": 1.6740795678421692,
+      "fp16_ms": 5.867395629882813,
+      "fp16_tops": 0.4117532302910776,
+      "int8_ms": 0.20979711532592774,
+      "int8_tops": 11.515502013680113,
+      "fp16_50pct_zeros_dense_ms": 5.848883056640625,
+      "fp16_50pct_zeros_dense_tops": 0.41305648969285624,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "cuSPARSELt not supported on your machine."
+    },
+    {
+      "layer": "mlp fc_in            768 -> 3072",
+      "tokens": 2048,
+      "K": 768,
+      "N": 3072,
+      "fp32_ms": 5.982075805664063,
+      "fp32_tops": 1.6154386420262437,
+      "fp16_ms": 23.2773388671875,
+      "fp16_tops": 0.41515383142109236,
+      "int8_ms": 0.8844025421142578,
+      "int8_tops": 10.926784982885687,
+      "fp16_50pct_zeros_dense_ms": 23.24187255859375,
+      "fp16_50pct_zeros_dense_tops": 0.41578734207570667,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "cuSPARSELt not supported on your machine."
+    },
+    {
+      "layer": "mlp fc_in            768 -> 3072",
+      "tokens": 8192,
+      "K": 768,
+      "N": 3072,
+      "fp32_ms": 24.24763671875,
+      "fp32_tops": 1.5941638400623772,
+      "fp16_ms": 93.58060546875,
+      "fp16_tops": 0.4130632140108158,
+      "int8_ms": 3.7017971801757814,
+      "int8_tops": 10.442145742345739,
+      "fp16_50pct_zeros_dense_ms": 93.5732421875,
+      "fp16_50pct_zeros_dense_tops": 0.4130957179675847,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "cuSPARSELt not supported on your machine."
+    },
+    {
+      "layer": "mlp fc_out          3072 -> 768",
+      "tokens": 512,
+      "K": 3072,
+      "N": 768,
+      "fp32_ms": 1.1722860717773438,
+      "fp32_tops": 2.0608613905453477,
+      "fp16_ms": 7.845560302734375,
+      "fp16_tops": 0.30793455289075927,
+      "int8_ms": 0.2295782470703125,
+      "int8_tops": 10.523292754561721,
+      "fp16_50pct_zeros_dense_ms": 7.776407470703125,
+      "fp16_50pct_zeros_dense_tops": 0.3106729055931991,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "cuSPARSELt not supported on your machine."
+    },
+    {
+      "layer": "mlp fc_out          3072 -> 768",
+      "tokens": 2048,
+      "K": 3072,
+      "N": 768,
+      "fp32_ms": 13.386021728515624,
+      "fp32_tops": 0.7219229590382269,
+      "fp16_ms": 23.3354541015625,
+      "fp16_tops": 0.41411992129833625,
+      "int8_ms": 0.7523091125488282,
+      "int8_tops": 12.845353399029559,
+      "fp16_50pct_zeros_dense_ms": 23.32068359375,
+      "fp16_50pct_zeros_dense_tops": 0.4143822104164171,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "cuSPARSELt not supported on your machine."
+    },
+    {
+      "layer": "mlp fc_out          3072 -> 768",
+      "tokens": 8192,
+      "K": 3072,
+      "N": 768,
+      "fp32_ms": 58.369208984375,
+      "fp32_tops": 0.6622448091483915,
+      "fp16_ms": 93.28490234375,
+      "fp16_tops": 0.41437258005115796,
+      "int8_ms": 3.442032775878906,
+      "int8_tops": 11.230196857765167,
+      "fp16_50pct_zeros_dense_ms": 93.2583203125,
+      "fp16_50pct_zeros_dense_tops": 0.41449069138787464,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "cuSPARSELt not supported on your machine."
+    }
+  ],
+  "full_gpt2": [
+    {
+      "precision": "fp32",
+      "batch_size": 1,
+      "seq_len": 128,
+      "latency_ms": 37.06951141357422,
+      "peak_memory_mb": 517.50341796875
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 1,
+      "seq_len": 1024,
+      "latency_ms": 166.17157459259033,
+      "peak_memory_mb": 754.912109375
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 8,
+      "seq_len": 512,
+      "latency_ms": 709.306788444519,
+      "peak_memory_mb": 1569.619140625
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 8,
+      "seq_len": 1024,
+      "latency_ms": 1504.1366338729858,
+      "peak_memory_mb": 2654.181640625
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 1,
+      "seq_len": 128,
+      "latency_ms": 96.23150825500488,
+      "peak_memory_mb": 272.81494140625
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 1,
+      "seq_len": 1024,
+      "latency_ms": 664.6031379699707,
+      "peak_memory_mb": 392.1474609375
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 8,
+      "seq_len": 512,
+      "latency_ms": 2577.7801990509033,
+      "peak_memory_mb": 798.6455078125
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 8,
+      "seq_len": 1024,
+      "latency_ms": 5266.268682479858,
+      "peak_memory_mb": 1341.9189453125
+    }
+  ]
+}

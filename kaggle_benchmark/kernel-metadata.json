@@ -1,0 +1,13 @@
+{
+  "id": "codyboii/llm-compression-tc-benchmark",
+  "title": "LLM Compression TC Benchmark",
+  "code_file": "benchmark_tensor_cores.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}

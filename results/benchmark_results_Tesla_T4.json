@@ -1,0 +1,214 @@
+{
+  "gpu": "Tesla T4",
+  "compute_capability": [
+    7,
+    5
+  ],
+  "torch_version": "2.11.0+cu130",
+  "cuda_version": "13.0",
+  "python": "3.13.16",
+  "matmuls": [
+    {
+      "layer": "attention q/k/v/out  768 -> 768",
+      "tokens": 512,
+      "K": 768,
+      "N": 768,
+      "fp32_ms": 0.2145894432067871,
+      "fp32_tops": 2.8145828936141117,
+      "fp16_ms": 0.05440447807312012,
+      "fp16_tops": 11.101655551005297,
+      "int8_ms": 0.09641983985900879,
+      "int8_tops": 6.264061181632096,
+      "fp16_50pct_zeros_dense_ms": 0.05322944164276123,
+      "fp16_50pct_zeros_dense_tops": 11.346723868596813,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "CUDA error: architecture mismatch when calling `cusparseLtInit(&handle)`"
+    },
+    {
+      "layer": "attention q/k/v/out  768 -> 768",
+      "tokens": 2048,
+      "K": 768,
+      "N": 768,
+      "fp32_ms": 0.8788787078857422,
+      "fp32_tops": 2.7488652100945874,
+      "fp16_ms": 0.15688063621520995,
+      "fp16_tops": 15.399727858611088,
+      "int8_ms": 0.27808448791503904,
+      "int8_tops": 8.687716176164837,
+      "fp16_50pct_zeros_dense_ms": 0.15677375793457032,
+      "fp16_50pct_zeros_dense_tops": 15.410226404142753,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "CUDA error: architecture mismatch when calling `cusparseLtInit(&handle)`"
+    },
+    {
+      "layer": "attention q/k/v/out  768 -> 768",
+      "tokens": 8192,
+      "K": 768,
+      "N": 768,
+      "fp32_ms": 2.5101107788085937,
+      "fp32_tops": 3.8499003699696455,
+      "fp16_ms": 0.37659774780273436,
+      "fp16_tops": 25.660473203525182,
+      "int8_ms": 0.6905728149414062,
+      "int8_tops": 13.993711027880448,
+      "fp16_50pct_zeros_dense_ms": 0.3813606262207031,
+      "fp16_50pct_zeros_dense_tops": 25.339995142569816,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "CUDA error: architecture mismatch when calling `cusparseLtInit(&handle)`"
+    },
+    {
+      "layer": "mlp fc_in            768 -> 3072",
+      "tokens": 512,
+      "K": 768,
+      "N": 3072,
+      "fp32_ms": 0.6216179275512695,
+      "fp32_tops": 3.886501654669123,
+      "fp16_ms": 0.11851519584655762,
+      "fp16_tops": 20.38488893127178,
+      "int8_ms": 0.2069856071472168,
+      "int8_tops": 11.6719183391418,
+      "fp16_50pct_zeros_dense_ms": 0.11819583892822266,
+      "fp16_50pct_zeros_dense_tops": 20.439967480302975,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "CUDA error: architecture mismatch when calling `cusparseLtInit(&handle)`"
+    },
+    {
+      "layer": "mlp fc_in            768 -> 3072",
+      "tokens": 2048,
+      "K": 768,
+      "N": 3072,
+      "fp32_ms": 2.217010498046875,
+      "fp32_tops": 4.358877156654617,
+      "fp16_ms": 0.36159488677978513,
+      "fp16_tops": 26.72514675763453,
+      "int8_ms": 0.7129497528076172,
+      "int8_tops": 13.554498585551304,
+      "fp16_50pct_zeros_dense_ms": 0.38063552856445315,
+      "fp16_50pct_zeros_dense_tops": 25.388266966160636,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "CUDA error: architecture mismatch when calling `cusparseLtInit(&handle)`"
+    },
+    {
+      "layer": "mlp fc_in            768 -> 3072",
+      "tokens": 8192,
+      "K": 768,
+      "N": 3072,
+      "fp32_ms": 8.978037109375,
+      "fp32_tops": 4.305474035481117,
+      "fp16_ms": 1.6225100708007814,
+      "fp16_tops": 23.824015862608587,
+      "int8_ms": 2.761605224609375,
+      "int8_tops": 13.997187331316573,
+      "fp16_50pct_zeros_dense_ms": 1.5047891235351563,
+      "fp16_50pct_zeros_dense_tops": 25.687789112397127,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "CUDA error: architecture mismatch when calling `cusparseLtInit(&handle)`"
+    },
+    {
+      "layer": "mlp fc_out          3072 -> 768",
+      "tokens": 512,
+      "K": 3072,
+      "N": 768,
+      "fp32_ms": 0.67162109375,
+      "fp32_tops": 3.597145959949981,
+      "fp16_ms": 0.1534329605102539,
+      "fp16_tops": 15.745763465461804,
+      "int8_ms": 0.2668889617919922,
+      "int8_tops": 9.052150706341006,
+      "fp16_50pct_zeros_dense_ms": 0.14286848068237304,
+      "fp16_50pct_zeros_dense_tops": 16.91009166235274,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "CUDA error: architecture mismatch when calling `cusparseLtInit(&handle)`"
+    },
+    {
+      "layer": "mlp fc_out          3072 -> 768",
+      "tokens": 2048,
+      "K": 3072,
+      "N": 768,
+      "fp32_ms": 2.2492352294921876,
+      "fp32_tops": 4.296427643177979,
+      "fp16_ms": 0.36063873291015625,
+      "fp16_tops": 26.7960025758172,
+      "int8_ms": 0.8269676971435547,
+      "int8_tops": 11.685675812222767,
+      "fp16_50pct_zeros_dense_ms": 0.39076480865478513,
+      "fp16_50pct_zeros_dense_tops": 24.73016044936948,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "CUDA error: architecture mismatch when calling `cusparseLtInit(&handle)`"
+    },
+    {
+      "layer": "mlp fc_out          3072 -> 768",
+      "tokens": 8192,
+      "K": 3072,
+      "N": 768,
+      "fp32_ms": 10.456336669921875,
+      "fp32_tops": 3.6967732470963766,
+      "fp16_ms": 1.5905824279785157,
+      "fp16_tops": 24.302233561781886,
+      "int8_ms": 2.6495391845703127,
+      "int8_tops": 14.589218339969108,
+      "fp16_50pct_zeros_dense_ms": 1.4847296142578126,
+      "fp16_50pct_zeros_dense_tops": 26.034845195246366,
+      "fp16_2to4_sparse_ms": null,
+      "fp16_2to4_sparse_error": "CUDA error: architecture mismatch when calling `cusparseLtInit(&handle)`"
+    }
+  ],
+  "full_gpt2": [
+    {
+      "precision": "fp32",
+      "batch_size": 1,
+      "seq_len": 128,
+      "latency_ms": 16.80119037628174,
+      "peak_memory_mb": 518.50341796875
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 1,
+      "seq_len": 1024,
+      "latency_ms": 78.89401912689209,
+      "peak_memory_mb": 755.912109375
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 8,
+      "seq_len": 512,
+      "latency_ms": 298.252010345459,
+      "peak_memory_mb": 1570.619140625
+    },
+    {
+      "precision": "fp32",
+      "batch_size": 8,
+      "seq_len": 1024,
+      "latency_ms": 618.2360410690308,
+      "peak_memory_mb": 2655.181640625
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 1,
+      "seq_len": 128,
+      "latency_ms": 9.477829933166504,
+      "peak_memory_mb": 275.68994140625
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 1,
+      "seq_len": 1024,
+      "latency_ms": 22.99973964691162,
+      "peak_memory_mb": 395.6474609375
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 8,
+      "seq_len": 512,
+      "latency_ms": 86.5229606628418,
+      "peak_memory_mb": 801.3955078125
+    },
+    {
+      "precision": "fp16",
+      "batch_size": 8,
+      "seq_len": 1024,
+      "latency_ms": 177.45683193206787,
+      "peak_memory_mb": 1344.7939453125
+    }
+  ]
+}
